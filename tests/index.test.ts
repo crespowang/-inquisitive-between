@@ -27,3 +27,15 @@ describe("when the high and low are reversed", (): void => {
         expect(() => { between.between("b", "a") }).to.throw("Reversed or equal high and low");
     });
 });
+
+describe("when the low is undefined", (): void => {
+    it("throws exception", (): void => {
+        expect(() => { between.between(null, "a") }).to.throw("Low must be defined");
+    });
+});
+
+describe("when the high is undefined", (): void => {
+    it("throws exception", (): void => {
+        expect(() => { between.between("a", null) }).to.throw("High must be defined");
+    });
+});

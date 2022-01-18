@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="20" lines-covered="20" line-rate="1" branches-valid="13" branches-covered="13" branch-rate="1" timestamp="1642501394340" complexity="0" version="0.1">
+<coverage lines-valid="24" lines-covered="24" line-rate="1" branches-valid="17" branches-covered="17" branch-rate="1" timestamp="1642502899520" complexity="0" version="0.1">
   <sources>
     <source>/Users/crespowang/Projects/between</source>
   </sources>
@@ -9,9 +9,9 @@
       <classes>
         <class name="index.ts" filename="src/index.ts" line-rate="1" branch-rate="1">
           <methods>
-            <method name="(anonymous_0)" hits="4" signature="()V">
+            <method name="(anonymous_0)" hits="6" signature="()V">
               <lines>
-                <line number="5" hits="4"/>
+                <line number="5" hits="6"/>
               </lines>
             </method>
           </methods>
@@ -20,22 +20,26 @@
             <line number="2" hits="1" branch="false"/>
             <line number="3" hits="1" branch="false"/>
             <line number="5" hits="1" branch="false"/>
-            <line number="6" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="6" hits="6" branch="true" condition-coverage="100% (2/2)"/>
             <line number="7" hits="2" branch="false"/>
-            <line number="10" hits="2" branch="false"/>
-            <line number="11" hits="2" branch="false"/>
-            <line number="13" hits="2" branch="false"/>
-            <line number="14" hits="3" branch="false"/>
-            <line number="15" hits="3" branch="false"/>
-            <line number="17" hits="3" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="18" hits="3" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="9" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="12" hits="3" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="16" hits="2" branch="false"/>
+            <line number="17" hits="2" branch="false"/>
+            <line number="19" hits="2" branch="false"/>
             <line number="20" hits="3" branch="false"/>
-            <line number="21" hits="3" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="24" hits="3" branch="false"/>
+            <line number="21" hits="3" branch="false"/>
+            <line number="23" hits="3" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="24" hits="3" branch="true" condition-coverage="100% (2/2)"/>
             <line number="26" hits="3" branch="false"/>
-            <line number="28" hits="3" branch="true" condition-coverage="100% (5/5)"/>
-            <line number="29" hits="2" branch="false"/>
-            <line number="32" hits="1" branch="false"/>
+            <line number="27" hits="3" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="30" hits="3" branch="false"/>
+            <line number="32" hits="3" branch="false"/>
+            <line number="34" hits="3" branch="true" condition-coverage="100% (5/5)"/>
+            <line number="35" hits="2" branch="false"/>
+            <line number="38" hits="1" branch="false"/>
           </lines>
         </class>
       </classes>

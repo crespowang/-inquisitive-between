@@ -6,6 +6,12 @@ export const between = (low: string, high: string): string => {
     if (high <= low) {
         throw new Error("Reversed or equal high and low");
     }
+    if (!high) {
+        throw new Error("High must be defined");
+    }
+    if (!low) {
+        throw new Error("Low must be defined");
+    }
 
     let newSortValue = "";
     let i = 0;
