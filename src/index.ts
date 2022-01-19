@@ -3,15 +3,13 @@ export const lo = charsFactory[0];
 export const hi = charsFactory[charsFactory.length - 1];
 
 export const between = (low: string, high: string): string => {
-    if (high <= low) {
+    if (typeof low !== "string" || typeof high !== "string") {
+        throw new Error("High and low must be string");
+    }
+    if (high.localeCompare(low) <= 0) {
         throw new Error("Reversed or equal high and low");
     }
-    if (!high) {
-        throw new Error("High must be defined");
-    }
-    if (!low) {
-        throw new Error("Low must be defined");
-    }
+
 
     let newSortValue = "";
     let i = 0;
@@ -31,7 +29,7 @@ export const between = (low: string, high: string): string => {
 
         newSortValue = `${newSortValue}${c}`;
 
-        if (low < newSortValue && newSortValue < high && c != lo)
+        if (low.localeCompare(newSortValue) < 0 && newSortValue.localeCompare(high) && c != lo)
             return newSortValue;
     }
 }
