@@ -18,4 +18,3 @@ C (sortValue: ?)
 B (sortValue: 'b')
 ```
 Using `between('a','b')` will return the string that sorts between `a` and `b`, which in this case is `aV`.
-
