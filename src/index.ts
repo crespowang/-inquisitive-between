@@ -17,9 +17,10 @@ export const between = (low: string, high: string): string => {
         correctedLow = low;
         correctedHigh = high;
     } else {
-        correctedHigh = high.localeCompare(low) < 0 ? low : high;
-        correctedLow = high.localeCompare(low) < 0 ? high : low;
+        correctedHigh = high < low ? low : high;
+        correctedLow = high < low ? high : low;
     }
+
     let newSortValue = "";
     let i = 0;
 

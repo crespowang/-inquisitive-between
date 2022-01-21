@@ -58,6 +58,15 @@ describe("when the high and low are reversed", (): void => {
 });
 
 
+describe("between V and k", (): void => {
+    it("returns c", (): void => {
+
+        const value = between.between("V", "k");
+        expect(value).to.equal("c");
+    });
+});
+
+
 describe("compare with the old between", (): void => {
     it("returns the same value", (): void => {
         let low = "A";
