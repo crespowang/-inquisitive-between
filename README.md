@@ -1,6 +1,6 @@
 # @inquisitive/between
 
-This repo is simply a rewritten and an improvement of [between](https://www.npmjs.com/package/between) in typescript. At [Inquisitive](https://www.inquisitive.com) we have been using between for many years, with `@ts-ignore`, which doesn't look good in a full type safe codebase. So we rewrote it in typescript, and using `localCompare` instead of the greater than `>` string comparsion. Have a read at this [post](https://learnersbucket.com/examples/javascript/best-way-to-compare-strings-in-javascript/) for the differences.
+This repo is simply a rewritten and an improvement of [between](https://www.npmjs.com/package/between) in typescript. At [Inquisitive](https://www.inquisitive.com) we have been using between for many years, with `@ts-ignore`, which doesn't look good in a full type safe codebase. So we rewrote it in typescript, and made it safer, for example, when the `high` and `low` passed in are equal, it will throw error rather than dead loop.  
 
 ## How it works?
 
